@@ -1,0 +1,613 @@
+---
+title: "Les alternatives à ChatGPT"
+authors:
+  - name: "Hategekimana Vestin" 
+    affiliation: "Université de Genève"
+    email: "vestin.hategekimana@unige.ch"
+format: 
+  clean-revealjs:
+    transition: slide
+    logo: figure/wedata_logo.png
+    auto-animate: true
+    preview-links: false
+  docx: default
+  beamer:
+    theme: "Dove"
+editor: visual
+---
+
+# Présentation
+
+## Qui suis-je?
+
+### Vestin Hategekimana
+
+.
+
+![](figure/pp.jpeg){.absolute top="0" right="480" width="230"}
+
+-   Assistant-doctorant en démographie (IDESO)
+
+    -   Institut de socioéconomie et de démographie (UNIGE)
+
+-   Migration et mobilité en Suisse en temps de crise
+
+-   Passionné des sciences des données et la programmation (computational social sciences)
+
+## WeData
+
+![](figure/wedata_logo.png){width="100"}
+
+> "Des stats et du code!"
+
+*Groupe étudiant ayant une passion pour le code et les statistiques: tutos et contenu!*
+
+-   Notre site: <https://wedata.ch/>
+-   Notre chaîne YouTube: [WeData](https://www.youtube.com/channel/UCGktdbvbc_H-JEkYYTvwRVw)
+-   Linkedin/Instagram/Facebook: @wedata_unige
+
+## Pour ce workshop
+
+::: callout-note
+Pour le bon déroulement du workshop, sachez que:
+
+1.  Je suis un amateur passionné
+
+2.  Ce n'est pas la première fois que j'enseigne le sujet
+
+3.  Ce n'est pas un workshop formel
+
+4.  Vous pouvez partir à n'importe quel moment
+
+5.  Vous pouvez m'interrompre si vous avez une question
+:::
+
+## Objectifs du workshop :
+
+-   Comprendre les limites des grands modèles comme ChatGPT et leurs alternatives
+-   Comprendre les différents niveaux de confidentialité
+-   Comprendre les avantages des alternatives
+
+## Ressources
+
+Présentations
+
+-   [AI Assistant](https://cyuhat.github.io/ai_assistant/)
+
+-   [Pas besoin de ChatGPT pour ça](https://cyuhat.github.io/TAKE_OVER_Pas_besoin_de_ChatGPT_pour_ca/)
+
+YouTube (playlist)
+
+-   [IA confidentielle](https://www.youtube.com/watch?v=6gZOtdDLVJE&list=PLSYhtt87oGAJE5kjDknjvUdmLDSKZc-bQ)
+
+-   [Ollama](https://www.youtube.com/watch?v=Pbjiy5yXhfM&list=PLSYhtt87oGALLAeLS9SEtMru-kdpiza9u)
+
+-   [Pas besoin de ChatGPT pour ça](https://www.youtube.com/watch?v=MTRd26Hsbr0&list=PLSYhtt87oGAIdkC_LuNz6D8xAkxPF0jgl)
+
+## Plan du workshop
+
+::::: columns
+::: {.column width="50%"}
+**Les limites de ChatGPT**
+
+**Alternatives similaires**
+
+**Alternatives confidentielles**
+
+-   Duck.AI
+
+-   LeoAI
+
+-   Lumo AI
+
+-   HuggingFace spaces
+:::
+
+::: {.column width="50%"}
+**Modèles locaux/open weight**
+
+-   ATrain (Whisper)
+
+-   Annotation: Ollama/LMStudio
+
+-   Autres initiatives
+:::
+:::::
+
+# Avant de commencer, téléchargeons Atrain et Ollama
+
+## Liens {auto-animate="true"}
+
+-   ATrain:
+
+    -   Microsoft store: <https://apps.microsoft.com/detail/9n15q44szns2?hl=fr-FR&gl=CH>
+    -   GitHub: <https://github.com/JuergenFleiss/aTrain>
+
+-   Ollama: <https://ollama.com/>
+
+## Liens {auto-animate="true"}
+
+-   ATrain:
+
+    -   Microsoft store: <https://apps.microsoft.com/detail/9n15q44szns2?hl=fr-FR&gl=CH>
+    -   GitHub: <https://github.com/JuergenFleiss/aTrain>
+    -   [New]{style="color: blue;"} Windows, Mac (Apple Silicon) and Debian: <https://business-analytics.uni-graz.at/de/forschung/atrain/download/>
+
+-   Ollama: <https://ollama.com/>
+
+# Qu'est-ce que ChatGPT ?
+
+## À quoi ressemble ChatGPT? {auto-animate="true"}
+
+À ça?
+
+[![Écran d'accueil de ChatGPT](figure/chatgpt_intro_screen.webp){fig-align="center"}](https://www.google.com/url?sa=i&url=https%3A%2F%2Fedunow.me%2Ftechnology%2Fwhat-is-chatgpt-google-search-the-beginning-of-the-end%2F&psig=AOvVaw2CpVpSHTK5Ew6-rZyFNB6T&ust=1739142622038000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNjktaaZtYsDFQAAAAAdAAAAABAE)
+
+## À quoi ressemble ChatGPT? {auto-animate="true"}
+
+Probablement à ça...
+
+![Illustration de serveurs](figure/Microsoft-Windows-Server-2025-kommt.jpg){fig-align="center"}
+
+## ChatGPT c'est...
+
+![](figure/openai-logo-freelogovectors.net_-974571776.png)
+
+Un ensemble de modèles de OpenAI qui peut:
+
+1.  Créer et traiter du texte
+
+2.  Faire de la programmation
+
+3.  Créer et traiter des images
+
+4.  Créer et traiter du son
+
+En bref, très puissants
+
+## Mais il a des limites:
+
+-   Il est parfois incorrect
+
+-   Il est imprécis
+
+-   Il est consensuel
+
+-   Il est biaisé
+
+Mais ce ne sont pas les plus grandes limites!
+
+## Les problèmes importants de ChatGPT
+
+1.  Ne respecte pas la vie privée
+
+2.  Cause des nouveaux défis environnementaux
+
+3.  Pose de sérieux problèmes éthiques
+
+## Problème de vie privée
+
+![](figure/big-data.jpg)
+
+-   Nous vivons dans une période de bigdata
+
+-   Les grandes compagnies collectent énormément de données sur nous
+
+-   OpenAI collecte les données de conversation pour entraîner ses modèles
+
+## Exemple de Google
+
+Comment google track nos données?
+
+1.  Historique de recherche
+
+2.  Google analytics
+
+## Transparence de la recherche:
+
+![](figure/google-search.jpg)
+
+**Nos historiques de recherches sont plus transparents qu'on le croit**
+
+## Avoir des conversations complètes c'est encore pire...
+
+![](figure/chat_history.jpg)
+
+## Solution pour les moteurs de recherche {auto-animate="true"}
+
+Utiliser des moteurs de recherche qui garantissent la vie privée...
+
+... Dans des navigateurs qui garantissent la vie privée!
+
+[duckduckgo](https://duckduckgo.com/)
+
+[brave](https://search.brave.com/)
+
+## Solution pour les moteurs de recherche {auto-animate="true"}
+
+![](figure/web_browser.png){.absolute width="500" right="500"}
+
+![](figure/DuckDuckGo_icon.png){.absolute width="100" right="0"}
+
+![](figure/Brave_Leo_AI.png){.absolute width="100" right="0" bottom="380"}
+
+## Solution pour les moteurs de recherche {auto-animate="true"}
+
+![](figure/web_browser.png){.absolute width="500" right="500"}
+
+![](figure/DuckDuckGo_icon.png){.absolute width="100" left="450"}
+
+![](figure/Brave_Leo_AI.png){.absolute width="100" left="250" bottom="380"}
+
+## Solution pour les moteurs de recherche {auto-animate="true"}
+
+![](figure/web_browser.png){.absolute width="500" right="500"}
+
+![](figure/DuckDuckGo_icon.png){.absolute width="100" left="250" bottom="380"}
+
+![](figure/Brave_Leo_AI.png){.absolute width="100" left="450"}
+
+## Solution pour les moteurs de recherche {auto-animate="true"}
+
+![](figure/web_browser.png){.absolute width="500" right="500"}
+
+![](figure/DuckDuckGo_icon.png){.absolute width="100" left="250" bottom="380"}
+
+![](figure/Brave_Leo_AI.png){.absolute width="100" left="450"} ![](figure/web_browser_advantages.png){.absolute width="400" right="0"}
+
+# Combien y a-t-il d'outils d'IA à votre avis?
+
+## There is an IA for that:
+
+Site web qui fait de la référence d'outil d'IA en ligne. Il n'est pas 100% à jour!
+
+-   <https://theresanaiforthat.com/>
+
+*Note: a "free mode" est possible pour ne voir que les outils gratuits*
+
+## Quels sont nos usages de l'IA? {auto-animate="true"}
+
+D'après "There is an IA for That":
+
+-   <https://theresanaiforthat.com/job/researcher/>
+-   <https://theresanaiforthat.com/job/academic-administrator/>
+
+## Quels sont nos usages de l'IA? {.scrollable auto-animate="true"}
+
+D'après OpenAI:
+
+![](figure/tasks_1.png) ![](figure/tasks_2.png)
+
+## Quels sont nos usages de l'IA? {auto-animate="true"}
+
+Et nous?
+
+-   Correction de texte
+
+-   Répondre à un email
+
+-   Traduction
+
+-   Résumer
+
+-   Recherche web
+
+-   Etc.
+
+## Défis pour les chercheuses et chercheurs
+
+Nous travaillons avec des données confidentielles (données d'enquêtes)
+
+-   Données de terrains
+
+-   Mails
+
+-   Travaux
+
+-   Parfois, nous n'avons pas d'infrastructures IA disponibles
+
+## Risques
+
+**Patriot Act (2001)**: Permet au FBI d'investiger des "éléments" pour la lutte contre le terrorisme
+
+**Cloud Act (2018)**: Permet au agences légales d'obtenir des données de toute firme des États-Unis, même lorsqu'elle sont stockées dans un autre pays.
+
+Mais:
+
+**Règlement Général sur la protection des Données (RGPD, 2016)**: Force les firmes avec des client.e.s Européen.ne.s à ne collecter que les données nécessaires et à être transparent sur l'utilisation de leur données. Les données ne doivent pas être conservées plus longtemps que nécessaire.
+
+## Les alternatives du jour
+
+![](figure/proximity_privacy.png)
+
+# Avant de continuer téléchargeons les éléments manquants
+
+-   Ollama: Gemma3:4b
+-   ATrain: tiny
+
+# Alternatives similaires
+
+## Approches classiques
+
+![](figure/classic_request.png)
+
+## Concurrents {auto-animate="true"}
+
+-   [Le chat](https://mistral.ai/fr), Mistral AI
+-   [Copilot](https://copilot.microsoft.com/), Microsoft
+-   [Gemini](https://gemini.google.com/app?hl=fr), Google (Compte)
+-   [Claude](https://claude.ai/), Anthropic (Compte)
+-   [DeepSeek](https://www.deepseek.com/en), DeepSeek (Compte)
+-   [Qwen](https://chat.qwen.ai/), Alibaba Cloud
+-   [Perplexity AI](https://www.perplexity.ai/), Perplexity
+
+## Concurrents {auto-animate="true"}
+
+**Sans compte**
+
+-   [Le chat](https://mistral.ai/fr), Mistral AI
+-   [Copilot](https://copilot.microsoft.com/), Microsoft
+-   [Qwen](https://chat.qwen.ai/), Alibaba Cloud
+-   [Perplexity AI](https://www.perplexity.ai/), Perplexity
+
+## Le chat
+
+![](figure/mistral.png){.absolute width="100" right="0"}
+
+[Le chat](https://mistral.ai/fr), Mistral AI
+
+**Version sans compte: limité**
+
+-   **10 requêtes/jour**
+-   Modèle Français (Européen)
+-   Simple d'utilisation
+
+## Copilot
+
+![](figure/copilot.png){.absolute width="100" right="0"}
+
+[Copilot](https://copilot.microsoft.com/), Microsoft
+
+**Version sans compte très fournie et orientée éducation**
+
+-   **Requêtes illimitées**
+-   Raisonnement
+-   Recherche web
+-   Utilisation de documents
+-   Génération d'image
+-   **Podcast**
+-   **Questionnaire**
+
+## Qwen
+
+![](figure/qwen.png){.absolute width="100" right="0"}
+
+[Qwen](https://chat.qwen.ai/), Alibaba Cloud
+
+**Version sans compte: très fournie**
+
+-   **Requêtes illimitées**
+-   Raisonnement
+-   Recherche web
+-   Utilisation de documents
+-   **Génération d'image + édition**
+-   **Interface de code**
+-   (Compte) Création de vidéo
+
+## Perplexity
+
+![](figure/perplexity.jpg){.absolute width="100" right="0"}
+
+[Perplexity AI](https://www.perplexity.ai/), Perplexity
+
+-   **2 Requêtes par jour**
+-   Très bonne recherche web (filtre, nb. de ressource)
+-   (compte) Recherche illimité
+-   (compte) Deep search
+
+## Concurrents résumés
+
+![](figure/Table_close_alternatives.png)
+
+# Alternatives confidentielles
+
+## Les alternatives du jour
+
+![](figure/proximity_privacy.png)
+
+## Pour la vie privée
+
+-   [Duck.AI](https://duck.ai), DuckDuckGo
+-   [LeoAI](https://brave.com/fr/), Brave
+-   [Lumo](https://lumo.proton.me), Proton
+-   [Huggingface spaces](https://huggingface.co/spaces), Huggingface
+
+## Duck.AI {auto-animate="true"}
+
+![](figure/DuckDuckGo_icon.png){.absolute width="100" right="0"}
+
+<https://duck.ai>
+
+![](figure/duckai_requests.png)
+
+## Duck.AI {.scrollable auto-animate="true"}
+
+![](figure/DuckDuckGo_icon.png){.absolute width="100" right="0"}
+
+<https://duck.ai>
+
+**Accessible**
+
+**Privé**
+
+-   **Requêtes: limite journalière large**
+-   Pas besoin de compte
+-   Historique locale
+-   Rétention des promptes 30 jours max
+-   Pas d'entrainement des réponses dans l'IA
+
+**Puissant**
+
+-   GPT-4o mini
+-   GPT5-mini
+-   GPT-OSS 120b
+-   Llama 4 scout
+-   Claude Haiku 3.5
+-   Mistral small 3
+
+## LeoAI {auto-animate="true"}
+
+![](figure/Brave_Leo_AI.png){.absolute width="100" right="0"}
+
+<https://brave.com/fr/>
+
+![](figure/leoai_request.png)
+
+## LeoAI {.scrollable auto-animate="true"}
+
+![](figure/Brave_Leo_AI.png){.absolute width="100" right="0"}
+
+<https://brave.com/fr/>
+
+**Privé**
+
+-   **Requêtes: limite journalière large**
+-   Pas besoin de compte
+-   Historique locale
+-   **Pas de rétention des promptes**
+-   Pas d'entrainement des réponses dans l'IA
+
+**Efficace**
+
+-   Llame 3.1 8b
+-   Qwen 14b
+-   Gemma 12b
+-   Claude Haiku
+-   Claude Sonnet
+-   DeepSeek R1
+
+## Lumo
+
+![](figure/lumo_cut.png){.absolute width="100" right="0"}
+
+**Privée**
+
+-   **Requêtes: limite journalière large**
+-   Pas besoin de compte
+-   Historique locale
+-   **Pas de rétention des promptes**
+-   Pas d'entrainement des réponses dans l'IA
+
+**Européenne**
+
+-   RGPD
+
+## Huggingface space
+
+![](figure/huggingface.png){.absolute width="100" right="0"}
+
+<https://huggingface.co/spaces>
+
+**Pas besoin de compte**
+
+**Pas de rétention de données**
+
+**Accès à un large choix de modèles**
+
+-   Text
+-   Image
+-   Vidéo
+-   Son
+-   Etc.
+
+## Résumé
+
+![](figure/table_ai_confidential.png)
+
+# Modèles locaux
+
+## Les alternatives du jour
+
+![](figure/proximity_privacy.png)
+
+## Retranscription avec aTrain
+
+**CPU (lent) vs GPU (rapide)** - Essentiellement carte graphique vs pas de carte graphique
+
+![](figure/whisper_api_table.png)
+
+## Exemple
+
+![](figure/aTrain_perf.jpg)
+
+## Quelle est ma VRAM?
+
+**VRAM**: Video Random-access memory (for graphical data). Plus ce nombre est élevé, mieux c'est.
+
+-   VRAM \< 2Go
+-   VRAM \> 2Go (entrée de gamme)
+-   VRAM \> 4Go (bonne carte graphique)
+
+Vérifier sur [Mac et Windows](https://www.lifewire.com/how-to-check-vram-5235783)
+
+## ATrain
+
+Un outil permettant de transcrire automatiquement des enregistrements vocaux à l'aide de modèles d'apprentissage automatique localement.
+
+-   Gratuit
+-   Local
+-   Audio/Vidéo
+-   Multilingue
+-   Détection de voix multiples
+-   Marquage temporel
+-   Multi-format: text, srt (sous-titre), MaxQDA, etc.
+-   Archives
+
+## Annotation Atlas.ti AI
+
+[Atlas.ti data security and Privacy](https://atlasti.com/ai-data-security-and-privacy)
+
+-   Frais supplémentaire
+-   OpenAI (ChatGPT) / serveur US
+-   Pas d'entraiement d'IA
+-   En accord avec la RGPD
+-   "Minimal data collection" vs "Zero data retention"
+
+## LMStudio
+
+![](figure/lmstudio.png){.absolute width="100" right="0"}
+
+<https://lmstudio.ai/>
+
+-   **Exécution locale de modèles** : Permet aux utilisateurs d'exécuter des modèles d'IA localement sans dépendre de services en ligne.
+-   **Convivialité** : Fournit une interface graphique pour la gestion des modèles.
+-   **Confidentialité** : Toutes les données sont conservées au niveau local, ce qui garantit une sécurité et une confidentialité accrues.
+
+## Ollama
+
+![](figure/ollama.png){.absolute width="100" right="0"}
+
+<https://ollama.com/>
+
+-   **Exécution locale de modèles** : Permet aux utilisateurs d'exécuter des modèles d'IA localement sans dépendre de services en ligne.
+-   **Confidentialité** : Toutes les données sont conservées au niveau local, ce qui garantit une sécurité et une confidentialité accrues.
+-   **Interface de ligne de commande** : Fournit un outil simple et léger pour exécuter des modèles localement.
+-   **Personnalisation** : Permet aux utilisatrices et utilisateurs de créer et de modifier des modèles personnalisés pour des besoins spécifiques.
+
+## Ollama cloud
+
+Permet d'utiliser les servers de l'équipe d'Ollama pour des résultats plus rapides.
+
+-   **Privée**
+-   **Pas de rétention des données**
+-   Serveur aux USA
+-   Limite d'utilisation
+
+# Autres initiatives locales
+
+## Initiatives
+
+-   [Infomaniak](https://www.infomaniak.com/fr/hebergement/ai-services) (CH)
+-   [Hactar](https://www.unige.ch/outils-ia/hactar) (UNIGE)
+    -   [Hactar Demo](https://hactar.unige.ch/) (UNIGE)
+-   [Mini-pc faculté SDS](https://www.hp.com/ch-fr/shop/products/desktops/hp-z2-mini-g1i-workstation-desktop-pc-a40pmet-uuz#features) (SDS)

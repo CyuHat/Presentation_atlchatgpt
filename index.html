@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/tabby.min.js"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-8f1af79587c2686b78fe4e1fbadd71ab.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.8.14">
+
+  <title>Les alternatives à ChatGPT</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-46b443fb7eb51017f5270809ffea19d1.css">
+  <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Les alternatives à ChatGPT</h1>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Hategekimana Vestin 
+</div>
+<div class="quarto-title-author-email">
+<a href="mailto:vestin.hategekimana@unige.ch">vestin.hategekimana@unige.ch</a>
+</div>
+        <p class="quarto-title-affiliation">
+            Université de Genève
+          </p>
+    </div>
+</div>
+
+</section>
+<section>
+<section id="présentation" class="title-slide slide level1 center">
+<h1>Présentation</h1>
+
+</section>
+<section id="qui-suis-je" class="slide level2">
+<h2>Qui suis-je?</h2>
+<h3 id="vestin-hategekimana">Vestin Hategekimana</h3>
+<p>.</p>
+<p><img data-src="figure/pp.jpeg" class="absolute" style="top: 0px; right: 480px; width: 230px; "></p>
+<ul>
+<li><p>Assistant-doctorant en démographie (IDESO)</p>
+<ul>
+<li>Institut de socioéconomie et de démographie (UNIGE)</li>
+</ul></li>
+<li><p>Migration et mobilité en Suisse en temps de crise</p></li>
+<li><p>Passionné des sciences des données et la programmation (computational social sciences)</p></li>
+</ul>
+</section>
+<section id="wedata" class="slide level2">
+<h2>WeData</h2>
+
+<img data-src="figure/wedata_logo.png" width="100" class="r-stretch"><blockquote>
+<p>“Des stats et du code!”</p>
+</blockquote>
+<p><em>Groupe étudiant ayant une passion pour le code et les statistiques: tutos et contenu!</em></p>
+<ul>
+<li>Notre site: <a href="https://wedata.ch/" class="uri">https://wedata.ch/</a></li>
+<li>Notre chaîne YouTube: <a href="https://www.youtube.com/channel/UCGktdbvbc_H-JEkYYTvwRVw">WeData</a></li>
+<li>Linkedin/Instagram/Facebook: <span class="citation" data-cites="wedata_unige">@wedata_unige</span></li>
+</ul>
+</section>
+<section id="pour-ce-workshop" class="slide level2">
+<h2>Pour ce workshop</h2>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>Pour le bon déroulement du workshop, sachez que:</p>
+<ol type="1">
+<li><p>Je suis un amateur passionné</p></li>
+<li><p>Ce n’est pas la première fois que j’enseigne le sujet</p></li>
+<li><p>Ce n’est pas un workshop formel</p></li>
+<li><p>Vous pouvez partir à n’importe quel moment</p></li>
+<li><p>Vous pouvez m’interrompre si vous avez une question</p></li>
+</ol>
+</div>
+</div>
+</div>
+</section>
+<section id="objectifs-du-workshop" class="slide level2">
+<h2>Objectifs du workshop :</h2>
+<ul>
+<li>Comprendre les limites des grands modèles comme ChatGPT et leurs alternatives</li>
+<li>Comprendre les différents niveaux de confidentialité</li>
+<li>Comprendre les avantages des alternatives</li>
+</ul>
+</section>
+<section id="ressources" class="slide level2">
+<h2>Ressources</h2>
+<p>Présentations</p>
+<ul>
+<li><p><a href="https://cyuhat.github.io/ai_assistant/">AI Assistant</a></p></li>
+<li><p><a href="https://cyuhat.github.io/TAKE_OVER_Pas_besoin_de_ChatGPT_pour_ca/">Pas besoin de ChatGPT pour ça</a></p></li>
+</ul>
+<p>YouTube (playlist)</p>
+<ul>
+<li><p><a href="https://www.youtube.com/watch?v=6gZOtdDLVJE&amp;list=PLSYhtt87oGAJE5kjDknjvUdmLDSKZc-bQ">IA confidentielle</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=Pbjiy5yXhfM&amp;list=PLSYhtt87oGALLAeLS9SEtMru-kdpiza9u">Ollama</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=MTRd26Hsbr0&amp;list=PLSYhtt87oGAIdkC_LuNz6D8xAkxPF0jgl">Pas besoin de ChatGPT pour ça</a></p></li>
+</ul>
+</section>
+<section id="plan-du-workshop" class="slide level2">
+<h2>Plan du workshop</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Les limites de ChatGPT</strong></p>
+<p><strong>Alternatives similaires</strong></p>
+<p><strong>Alternatives confidentielles</strong></p>
+<ul>
+<li><p>Duck.AI</p></li>
+<li><p>LeoAI</p></li>
+<li><p>Lumo AI</p></li>
+<li><p>HuggingFace spaces</p></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><strong>Modèles locaux/open weight</strong></p>
+<ul>
+<li><p>ATrain (Whisper)</p></li>
+<li><p>Annotation: Ollama/LMStudio</p></li>
+<li><p>Autres initiatives</p></li>
+</ul>
+</div></div>
+</section></section>
+<section>
+<section id="avant-de-commencer-téléchargeons-atrain-et-ollama" class="title-slide slide level1 center">
+<h1>Avant de commencer, téléchargeons Atrain et Ollama</h1>
+
+</section>
+<section id="liens" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Liens</h2>
+<ul>
+<li><p>ATrain:</p>
+<ul>
+<li>Microsoft store: <a href="https://apps.microsoft.com/detail/9n15q44szns2?hl=fr-FR&amp;gl=CH" class="uri">https://apps.microsoft.com/detail/9n15q44szns2?hl=fr-FR&amp;gl=CH</a></li>
+<li>GitHub: <a href="https://github.com/JuergenFleiss/aTrain" class="uri">https://github.com/JuergenFleiss/aTrain</a></li>
+</ul></li>
+<li><p>Ollama: <a href="https://ollama.com/" class="uri">https://ollama.com/</a></p></li>
+</ul>
+</section>
+<section id="liens-1" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Liens</h2>
+<ul>
+<li><p>ATrain:</p>
+<ul>
+<li>Microsoft store: <a href="https://apps.microsoft.com/detail/9n15q44szns2?hl=fr-FR&amp;gl=CH" class="uri">https://apps.microsoft.com/detail/9n15q44szns2?hl=fr-FR&amp;gl=CH</a></li>
+<li>GitHub: <a href="https://github.com/JuergenFleiss/aTrain" class="uri">https://github.com/JuergenFleiss/aTrain</a></li>
+<li><span style="color: blue;">New</span> Windows, Mac (Apple Silicon) and Debian: <a href="https://business-analytics.uni-graz.at/de/forschung/atrain/download/" class="uri">https://business-analytics.uni-graz.at/de/forschung/atrain/download/</a></li>
+</ul></li>
+<li><p>Ollama: <a href="https://ollama.com/" class="uri">https://ollama.com/</a></p></li>
+</ul>
+</section></section>
+<section>
+<section id="quest-ce-que-chatgpt" class="title-slide slide level1 center">
+<h1>Qu’est-ce que ChatGPT ?</h1>
+
+</section>
+<section id="à-quoi-ressemble-chatgpt" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">À quoi ressemble ChatGPT?</h2>
+<p>À ça?</p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://www.google.com/url?sa=i&amp;url=https%3A%2F%2Fedunow.me%2Ftechnology%2Fwhat-is-chatgpt-google-search-the-beginning-of-the-end%2F&amp;psig=AOvVaw2CpVpSHTK5Ew6-rZyFNB6T&amp;ust=1739142622038000&amp;source=images&amp;cd=vfe&amp;opi=89978449&amp;ved=0CBQQjRxqFwoTCNjktaaZtYsDFQAAAAAdAAAAABAE"><img data-src="figure/chatgpt_intro_screen.webp" class="quarto-figure quarto-figure-center"></a></p>
+</figure>
+</div>
+<figcaption>Écran d’accueil de ChatGPT</figcaption>
+</figure>
+</div>
+</section>
+<section id="à-quoi-ressemble-chatgpt-1" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">À quoi ressemble ChatGPT?</h2>
+<p>Probablement à ça…</p>
+
+<img data-src="figure/Microsoft-Windows-Server-2025-kommt.jpg" class="r-stretch quarto-figure-center"><p class="caption">Illustration de serveurs</p></section>
+<section id="chatgpt-cest" class="slide level2">
+<h2>ChatGPT c’est…</h2>
+
+<img data-src="figure/openai-logo-freelogovectors.net_-974571776.png" class="r-stretch"><p>Un ensemble de modèles de OpenAI qui peut:</p>
+<ol type="1">
+<li><p>Créer et traiter du texte</p></li>
+<li><p>Faire de la programmation</p></li>
+<li><p>Créer et traiter des images</p></li>
+<li><p>Créer et traiter du son</p></li>
+</ol>
+<p>En bref, très puissants</p>
+</section>
+<section id="mais-il-a-des-limites" class="slide level2">
+<h2>Mais il a des limites:</h2>
+<ul>
+<li><p>Il est parfois incorrect</p></li>
+<li><p>Il est imprécis</p></li>
+<li><p>Il est consensuel</p></li>
+<li><p>Il est biaisé</p></li>
+</ul>
+<p>Mais ce ne sont pas les plus grandes limites!</p>
+</section>
+<section id="les-problèmes-importants-de-chatgpt" class="slide level2">
+<h2>Les problèmes importants de ChatGPT</h2>
+<ol type="1">
+<li><p>Ne respecte pas la vie privée</p></li>
+<li><p>Cause des nouveaux défis environnementaux</p></li>
+<li><p>Pose de sérieux problèmes éthiques</p></li>
+</ol>
+</section>
+<section id="problème-de-vie-privée" class="slide level2">
+<h2>Problème de vie privée</h2>
+
+<img data-src="figure/big-data.jpg" class="r-stretch"><ul>
+<li><p>Nous vivons dans une période de bigdata</p></li>
+<li><p>Les grandes compagnies collectent énormément de données sur nous</p></li>
+<li><p>OpenAI collecte les données de conversation pour entraîner ses modèles</p></li>
+</ul>
+</section>
+<section id="exemple-de-google" class="slide level2">
+<h2>Exemple de Google</h2>
+<p>Comment google track nos données?</p>
+<ol type="1">
+<li><p>Historique de recherche</p></li>
+<li><p>Google analytics</p></li>
+</ol>
+</section>
+<section id="transparence-de-la-recherche" class="slide level2">
+<h2>Transparence de la recherche:</h2>
+
+<img data-src="figure/google-search.jpg" class="r-stretch"><p><strong>Nos historiques de recherches sont plus transparents qu’on le croit</strong></p>
+</section>
+<section id="avoir-des-conversations-complètes-cest-encore-pire" class="slide level2">
+<h2>Avoir des conversations complètes c’est encore pire…</h2>
+
+<img data-src="figure/chat_history.jpg" class="r-stretch"></section>
+<section id="solution-pour-les-moteurs-de-recherche" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Solution pour les moteurs de recherche</h2>
+<p>Utiliser des moteurs de recherche qui garantissent la vie privée…</p>
+<p>… Dans des navigateurs qui garantissent la vie privée!</p>
+<p><a href="https://duckduckgo.com/">duckduckgo</a></p>
+<p><a href="https://search.brave.com/">brave</a></p>
+</section>
+<section id="solution-pour-les-moteurs-de-recherche-1" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Solution pour les moteurs de recherche</h2>
+<p><img data-src="figure/web_browser.png" class="absolute" style="right: 500px; width: 500px; "></p>
+<p><img data-src="figure/DuckDuckGo_icon.png" class="absolute" style="right: 0px; width: 100px; "></p>
+<p><img data-src="figure/Brave_Leo_AI.png" class="absolute" style="bottom: 380px; right: 0px; width: 100px; "></p>
+</section>
+<section id="solution-pour-les-moteurs-de-recherche-2" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Solution pour les moteurs de recherche</h2>
+<p><img data-src="figure/web_browser.png" class="absolute" style="right: 500px; width: 500px; "></p>
+<p><img data-src="figure/DuckDuckGo_icon.png" class="absolute" style="left: 450px; width: 100px; "></p>
+<p><img data-src="figure/Brave_Leo_AI.png" class="absolute" style="left: 250px; bottom: 380px; width: 100px; "></p>
+</section>
+<section id="solution-pour-les-moteurs-de-recherche-3" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Solution pour les moteurs de recherche</h2>
+<p><img data-src="figure/web_browser.png" class="absolute" style="right: 500px; width: 500px; "></p>
+<p><img data-src="figure/DuckDuckGo_icon.png" class="absolute" style="left: 250px; bottom: 380px; width: 100px; "></p>
+<p><img data-src="figure/Brave_Leo_AI.png" class="absolute" style="left: 450px; width: 100px; "></p>
+</section>
+<section id="solution-pour-les-moteurs-de-recherche-4" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Solution pour les moteurs de recherche</h2>
+<p><img data-src="figure/web_browser.png" class="absolute" style="right: 500px; width: 500px; "></p>
+<p><img data-src="figure/DuckDuckGo_icon.png" class="absolute" style="left: 250px; bottom: 380px; width: 100px; "></p>
+<p><img data-src="figure/Brave_Leo_AI.png" class="absolute" style="left: 450px; width: 100px; "> <img data-src="figure/web_browser_advantages.png" class="absolute" style="right: 0px; width: 400px; "></p>
+</section></section>
+<section>
+<section id="combien-y-a-t-il-doutils-dia-à-votre-avis" class="title-slide slide level1 center">
+<h1>Combien y a-t-il d’outils d’IA à votre avis?</h1>
+
+</section>
+<section id="there-is-an-ia-for-that" class="slide level2">
+<h2>There is an IA for that:</h2>
+<p>Site web qui fait de la référence d’outil d’IA en ligne. Il n’est pas 100% à jour!</p>
+<ul>
+<li><a href="https://theresanaiforthat.com/" class="uri">https://theresanaiforthat.com/</a></li>
+</ul>
+<p><em>Note: a “free mode” est possible pour ne voir que les outils gratuits</em></p>
+</section>
+<section id="quels-sont-nos-usages-de-lia" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Quels sont nos usages de l’IA?</h2>
+<p>D’après “There is an IA for That”:</p>
+<ul>
+<li><a href="https://theresanaiforthat.com/job/researcher/" class="uri">https://theresanaiforthat.com/job/researcher/</a></li>
+<li><a href="https://theresanaiforthat.com/job/academic-administrator/" class="uri">https://theresanaiforthat.com/job/academic-administrator/</a></li>
+</ul>
+</section>
+<section id="quels-sont-nos-usages-de-lia-1" class="slide level2 scrollable" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Quels sont nos usages de l’IA?</h2>
+<p>D’après OpenAI:</p>
+<p><img data-src="figure/tasks_1.png"> <img data-src="figure/tasks_2.png"></p>
+</section>
+<section id="quels-sont-nos-usages-de-lia-2" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Quels sont nos usages de l’IA?</h2>
+<p>Et nous?</p>
+<ul>
+<li><p>Correction de texte</p></li>
+<li><p>Répondre à un email</p></li>
+<li><p>Traduction</p></li>
+<li><p>Résumer</p></li>
+<li><p>Recherche web</p></li>
+<li><p>Etc.</p></li>
+</ul>
+</section>
+<section id="défis-pour-les-chercheuses-et-chercheurs" class="slide level2">
+<h2>Défis pour les chercheuses et chercheurs</h2>
+<p>Nous travaillons avec des données confidentielles (données d’enquêtes)</p>
+<ul>
+<li><p>Données de terrains</p></li>
+<li><p>Mails</p></li>
+<li><p>Travaux</p></li>
+<li><p>Parfois, nous n’avons pas d’infrastructures IA disponibles</p></li>
+</ul>
+</section>
+<section id="risques" class="slide level2">
+<h2>Risques</h2>
+<p><strong>Patriot Act (2001)</strong>: Permet au FBI d’investiger des “éléments” pour la lutte contre le terrorisme</p>
+<p><strong>Cloud Act (2018)</strong>: Permet au agences légales d’obtenir des données de toute firme des États-Unis, même lorsqu’elle sont stockées dans un autre pays.</p>
+<p>Mais:</p>
+<p><strong>Règlement Général sur la protection des Données (RGPD, 2016)</strong>: Force les firmes avec des client.e.s Européen.ne.s à ne collecter que les données nécessaires et à être transparent sur l’utilisation de leur données. Les données ne doivent pas être conservées plus longtemps que nécessaire.</p>
+</section>
+<section id="les-alternatives-du-jour" class="slide level2">
+<h2>Les alternatives du jour</h2>
+
+<img data-src="figure/proximity_privacy.png" class="r-stretch"></section></section>
+<section id="avant-de-continuer-téléchargeons-les-éléments-manquants" class="title-slide slide level1 center">
+<h1>Avant de continuer téléchargeons les éléments manquants</h1>
+<ul>
+<li>Ollama: Gemma3:4b</li>
+<li>ATrain: tiny</li>
+</ul>
+</section>
+
+<section>
+<section id="alternatives-similaires" class="title-slide slide level1 center">
+<h1>Alternatives similaires</h1>
+
+</section>
+<section id="approches-classiques" class="slide level2">
+<h2>Approches classiques</h2>
+
+<img data-src="figure/classic_request.png" class="r-stretch"></section>
+<section id="concurrents" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Concurrents</h2>
+<ul>
+<li><a href="https://mistral.ai/fr">Le chat</a>, Mistral AI</li>
+<li><a href="https://copilot.microsoft.com/">Copilot</a>, Microsoft</li>
+<li><a href="https://gemini.google.com/app?hl=fr">Gemini</a>, Google (Compte)</li>
+<li><a href="https://claude.ai/">Claude</a>, Anthropic (Compte)</li>
+<li><a href="https://www.deepseek.com/en">DeepSeek</a>, DeepSeek (Compte)</li>
+<li><a href="https://chat.qwen.ai/">Qwen</a>, Alibaba Cloud</li>
+<li><a href="https://www.perplexity.ai/">Perplexity AI</a>, Perplexity</li>
+</ul>
+</section>
+<section id="concurrents-1" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Concurrents</h2>
+<p><strong>Sans compte</strong></p>
+<ul>
+<li><a href="https://mistral.ai/fr">Le chat</a>, Mistral AI</li>
+<li><a href="https://copilot.microsoft.com/">Copilot</a>, Microsoft</li>
+<li><a href="https://chat.qwen.ai/">Qwen</a>, Alibaba Cloud</li>
+<li><a href="https://www.perplexity.ai/">Perplexity AI</a>, Perplexity</li>
+</ul>
+</section>
+<section id="le-chat" class="slide level2">
+<h2>Le chat</h2>
+<p><img data-src="figure/mistral.png" class="absolute" style="right: 0px; width: 100px; "></p>
+<p><a href="https://mistral.ai/fr">Le chat</a>, Mistral AI</p>
+<p><strong>Version sans compte: limité</strong></p>
+<ul>
+<li><strong>10 requêtes/jour</strong></li>
+<li>Modèle Français (Européen)</li>
+<li>Simple d’utilisation</li>
+</ul>
+</section>
+<section id="copilot" class="slide level2">
+<h2>Copilot</h2>
+<p><img data-src="figure/copilot.png" class="absolute" style="right: 0px; width: 100px; "></p>
+<p><a href="https://copilot.microsoft.com/">Copilot</a>, Microsoft</p>
+<p><strong>Version sans compte très fournie et orientée éducation</strong></p>
+<ul>
+<li><strong>Requêtes illimitées</strong></li>
+<li>Raisonnement</li>
+<li>Recherche web</li>
+<li>Utilisation de documents</li>
+<li>Génération d’image</li>
+<li><strong>Podcast</strong></li>
+<li><strong>Questionnaire</strong></li>
+</ul>
+</section>
+<section id="qwen" class="slide level2">
+<h2>Qwen</h2>
+<p><img data-src="figure/qwen.png" class="absolute" style="right: 0px; width: 100px; "></p>
+<p><a href="https://chat.qwen.ai/">Qwen</a>, Alibaba Cloud</p>
+<p><strong>Version sans compte: très fournie</strong></p>
+<ul>
+<li><strong>Requêtes illimitées</strong></li>
+<li>Raisonnement</li>
+<li>Recherche web</li>
+<li>Utilisation de documents</li>
+<li><strong>Génération d’image + édition</strong></li>
+<li><strong>Interface de code</strong></li>
+<li>(Compte) Création de vidéo</li>
+</ul>
+</section>
+<section id="perplexity" class="slide level2">
+<h2>Perplexity</h2>
+<p><img data-src="figure/perplexity.jpg" class="absolute" style="right: 0px; width: 100px; "></p>
+<p><a href="https://www.perplexity.ai/">Perplexity AI</a>, Perplexity</p>
+<ul>
+<li><strong>2 Requêtes par jour</strong></li>
+<li>Très bonne recherche web (filtre, nb. de ressource)</li>
+<li>(compte) Recherche illimité</li>
+<li>(compte) Deep search</li>
+</ul>
+</section>
+<section id="concurrents-résumés" class="slide level2">
+<h2>Concurrents résumés</h2>
+
+<img data-src="figure/Table_close_alternatives.png" class="r-stretch"></section></section>
+<section>
+<section id="alternatives-confidentielles" class="title-slide slide level1 center">
+<h1>Alternatives confidentielles</h1>
+
+</section>
+<section id="les-alternatives-du-jour-1" class="slide level2">
+<h2>Les alternatives du jour</h2>
+
+<img data-src="figure/proximity_privacy.png" class="r-stretch"></section>
+<section id="pour-la-vie-privée" class="slide level2">
+<h2>Pour la vie privée</h2>
+<ul>
+<li><a href="https://duck.ai">Duck.AI</a>, DuckDuckGo</li>
+<li><a href="https://brave.com/fr/">LeoAI</a>, Brave</li>
+<li><a href="https://lumo.proton.me">Lumo</a>, Proton</li>
+<li><a href="https://huggingface.co/spaces">Huggingface spaces</a>, Huggingface</li>
+</ul>
+</section>
+<section id="duck.ai" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Duck.AI</h2>
+<p><img data-src="figure/DuckDuckGo_icon.png" class="absolute" style="right: 0px; width: 100px; "></p>
+<p><a href="https://duck.ai" class="uri">https://duck.ai</a></p>
+<p><img data-src="figure/duckai_requests.png"></p>
+</section>
+<section id="duck.ai-1" class="slide level2 scrollable" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Duck.AI</h2>
+<p><img data-src="figure/DuckDuckGo_icon.png" class="absolute" style="right: 0px; width: 100px; "></p>
+<p><a href="https://duck.ai" class="uri">https://duck.ai</a></p>
+<p><strong>Accessible</strong></p>
+<p><strong>Privé</strong></p>
+<ul>
+<li><strong>Requêtes: limite journalière large</strong></li>
+<li>Pas besoin de compte</li>
+<li>Historique locale</li>
+<li>Rétention des promptes 30 jours max</li>
+<li>Pas d’entrainement des réponses dans l’IA</li>
+</ul>
+<p><strong>Puissant</strong></p>
+<ul>
+<li>GPT-4o mini</li>
+<li>GPT5-mini</li>
+<li>GPT-OSS 120b</li>
+<li>Llama 4 scout</li>
+<li>Claude Haiku 3.5</li>
+<li>Mistral small 3</li>
+</ul>
+</section>
+<section id="leoai" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">LeoAI</h2>
+<p><img data-src="figure/Brave_Leo_AI.png" class="absolute" style="right: 0px; width: 100px; "></p>
+<p><a href="https://brave.com/fr/" class="uri">https://brave.com/fr/</a></p>
+<p><img data-src="figure/leoai_request.png"></p>
+</section>
+<section id="leoai-1" class="slide level2 scrollable" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">LeoAI</h2>
+<p><img data-src="figure/Brave_Leo_AI.png" class="absolute" style="right: 0px; width: 100px; "></p>
+<p><a href="https://brave.com/fr/" class="uri">https://brave.com/fr/</a></p>
+<p><strong>Privé</strong></p>
+<ul>
+<li><strong>Requêtes: limite journalière large</strong></li>
+<li>Pas besoin de compte</li>
+<li>Historique locale</li>
+<li><strong>Pas de rétention des promptes</strong></li>
+<li>Pas d’entrainement des réponses dans l’IA</li>
+</ul>
+<p><strong>Efficace</strong></p>
+<ul>
+<li>Llame 3.1 8b</li>
+<li>Qwen 14b</li>
+<li>Gemma 12b</li>
+<li>Claude Haiku</li>
+<li>Claude Sonnet</li>
+<li>DeepSeek R1</li>
+</ul>
+</section>
+<section id="lumo" class="slide level2">
+<h2>Lumo</h2>
+<p><img data-src="figure/lumo_cut.png" class="absolute" style="right: 0px; width: 100px; "></p>
+<p><strong>Privée</strong></p>
+<ul>
+<li><strong>Requêtes: limite journalière large</strong></li>
+<li>Pas besoin de compte</li>
+<li>Historique locale</li>
+<li><strong>Pas de rétention des promptes</strong></li>
+<li>Pas d’entrainement des réponses dans l’IA</li>
+</ul>
+<p><strong>Européenne</strong></p>
+<ul>
+<li>RGPD</li>
+</ul>
+</section>
+<section id="huggingface-space" class="slide level2">
+<h2>Huggingface space</h2>
+<p><img data-src="figure/huggingface.png" class="absolute" style="right: 0px; width: 100px; "></p>
+<p><a href="https://huggingface.co/spaces" class="uri">https://huggingface.co/spaces</a></p>
+<p><strong>Pas besoin de compte</strong></p>
+<p><strong>Pas de rétention de données</strong></p>
+<p><strong>Accès à un large choix de modèles</strong></p>
+<ul>
+<li>Text</li>
+<li>Image</li>
+<li>Vidéo</li>
+<li>Son</li>
+<li>Etc.</li>
+</ul>
+</section>
+<section id="résumé" class="slide level2">
+<h2>Résumé</h2>
+
+<img data-src="figure/table_ai_confidential.png" class="r-stretch"></section></section>
+<section>
+<section id="modèles-locaux" class="title-slide slide level1 center">
+<h1>Modèles locaux</h1>
+
+</section>
+<section id="les-alternatives-du-jour-2" class="slide level2">
+<h2>Les alternatives du jour</h2>
+
+<img data-src="figure/proximity_privacy.png" class="r-stretch"></section>
+<section id="retranscription-avec-atrain" class="slide level2">
+<h2>Retranscription avec aTrain</h2>
+<p><strong>CPU (lent) vs GPU (rapide)</strong> - Essentiellement carte graphique vs pas de carte graphique</p>
+
+<img data-src="figure/whisper_api_table.png" class="r-stretch"></section>
+<section id="exemple" class="slide level2">
+<h2>Exemple</h2>
+
+<img data-src="figure/aTrain_perf.jpg" class="r-stretch"></section>
+<section id="quelle-est-ma-vram" class="slide level2">
+<h2>Quelle est ma VRAM?</h2>
+<p><strong>VRAM</strong>: Video Random-access memory (for graphical data). Plus ce nombre est élevé, mieux c’est.</p>
+<ul>
+<li>VRAM &lt; 2Go</li>
+<li>VRAM &gt; 2Go (entrée de gamme)</li>
+<li>VRAM &gt; 4Go (bonne carte graphique)</li>
+</ul>
+<p>Vérifier sur <a href="https://www.lifewire.com/how-to-check-vram-5235783">Mac et Windows</a></p>
+</section>
+<section id="atrain" class="slide level2">
+<h2>ATrain</h2>
+<p>Un outil permettant de transcrire automatiquement des enregistrements vocaux à l’aide de modèles d’apprentissage automatique localement.</p>
+<ul>
+<li>Gratuit</li>
+<li>Local</li>
+<li>Audio/Vidéo</li>
+<li>Multilingue</li>
+<li>Détection de voix multiples</li>
+<li>Marquage temporel</li>
+<li>Multi-format: text, srt (sous-titre), MaxQDA, etc.</li>
+<li>Archives</li>
+</ul>
+</section>
+<section id="annotation-atlas.ti-ai" class="slide level2">
+<h2>Annotation Atlas.ti AI</h2>
+<p><a href="https://atlasti.com/ai-data-security-and-privacy">Atlas.ti data security and Privacy</a></p>
+<ul>
+<li>Frais supplémentaire</li>
+<li>OpenAI (ChatGPT) / serveur US</li>
+<li>Pas d’entraiement d’IA</li>
+<li>En accord avec la RGPD</li>
+<li>“Minimal data collection” vs “Zero data retention”</li>
+</ul>
+</section>
+<section id="lmstudio" class="slide level2">
+<h2>LMStudio</h2>
+<p><img data-src="figure/lmstudio.png" class="absolute" style="right: 0px; width: 100px; "></p>
+<p><a href="https://lmstudio.ai/" class="uri">https://lmstudio.ai/</a></p>
+<ul>
+<li><strong>Exécution locale de modèles</strong> : Permet aux utilisateurs d’exécuter des modèles d’IA localement sans dépendre de services en ligne.</li>
+<li><strong>Convivialité</strong> : Fournit une interface graphique pour la gestion des modèles.</li>
+<li><strong>Confidentialité</strong> : Toutes les données sont conservées au niveau local, ce qui garantit une sécurité et une confidentialité accrues.</li>
+</ul>
+</section>
+<section id="ollama" class="slide level2">
+<h2>Ollama</h2>
+<p><img data-src="figure/ollama.png" class="absolute" style="right: 0px; width: 100px; "></p>
+<p><a href="https://ollama.com/" class="uri">https://ollama.com/</a></p>
+<ul>
+<li><strong>Exécution locale de modèles</strong> : Permet aux utilisateurs d’exécuter des modèles d’IA localement sans dépendre de services en ligne.</li>
+<li><strong>Confidentialité</strong> : Toutes les données sont conservées au niveau local, ce qui garantit une sécurité et une confidentialité accrues.</li>
+<li><strong>Interface de ligne de commande</strong> : Fournit un outil simple et léger pour exécuter des modèles localement.</li>
+<li><strong>Personnalisation</strong> : Permet aux utilisatrices et utilisateurs de créer et de modifier des modèles personnalisés pour des besoins spécifiques.</li>
+</ul>
+</section>
+<section id="ollama-cloud" class="slide level2">
+<h2>Ollama cloud</h2>
+<p>Permet d’utiliser les servers de l’équipe d’Ollama pour des résultats plus rapides.</p>
+<ul>
+<li><strong>Privée</strong></li>
+<li><strong>Pas de rétention des données</strong></li>
+<li>Serveur aux USA</li>
+<li>Limite d’utilisation</li>
+</ul>
+</section></section>
+<section>
+<section id="autres-initiatives-locales" class="title-slide slide level1 center">
+<h1>Autres initiatives locales</h1>
+
+</section>
+<section id="initiatives" class="slide level2">
+<h2>Initiatives</h2>
+<ul>
+<li><a href="https://www.infomaniak.com/fr/hebergement/ai-services">Infomaniak</a> (CH)</li>
+<li><a href="https://www.unige.ch/outils-ia/hactar">Hactar</a> (UNIGE)
+<ul>
+<li><a href="https://hactar.unige.ch/">Hactar Demo</a> (UNIGE)</li>
+</ul></li>
+<li><a href="https://www.hp.com/ch-fr/shop/products/desktops/hp-z2-mini-g1i-workstation-desktop-pc-a40pmet-uuz#features">Mini-pc faculté SDS</a> (SDS)</li>
+</ul>
+
+</section></section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<p><img src="figure/wedata_logo.png" class="slide-logo"></p>
+<div class="footer footer-default">
+
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="index_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="index_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="index_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="index_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="index_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="index_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="index_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+            const codeEl = trigger.previousElementSibling.cloneNode(true);
+            for (const childEl of codeEl.children) {
+              if (isCodeAnnotation(childEl)) {
+                childEl.remove();
+              }
+            }
+            return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>
